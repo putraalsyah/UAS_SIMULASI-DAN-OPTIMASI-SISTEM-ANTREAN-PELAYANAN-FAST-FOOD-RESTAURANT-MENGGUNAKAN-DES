@@ -593,47 +593,7 @@ def main():
                 
                 st.dataframe(display_df, use_container_width=True, hide_index=True)
             
-            # =================================================================
-            # DOWNLOAD RESULTS
-            # =================================================================
-            st.markdown("## 💾 Download Results")
-            
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                # Prepare results for download
-                results_dict = {
-                    'Simulation Parameters': {
-                        'Number of Servers': num_servers,
-                        'Arrival Rate': arrival_rate,
-                        'Service Mean': service_mean,
-                        'Service Std': service_std,
-                        'Simulation Duration': sim_duration,
-                        'Number of Customers': num_customers
-                    },
-                    'Results': results
-                }
-                
-                json_string = json.dumps(results_dict, indent=4)
-                
-                st.download_button(
-                    label="📄 Download Results (JSON)",
-                    data=json_string,
-                    file_name="simulation_results.json",
-                    mime="application/json"
-                )
-            
-            with col2:
-                # Prepare CSV
-                csv_data = pd.DataFrame([results])
-                csv_string = csv_data.to_csv(index=False)
-                
-                st.download_button(
-                    label="📊 Download Results (CSV)",
-                    data=csv_string,
-                    file_name="simulation_results.csv",
-                    mime="text/csv"
-                )
+
     
     else:
         # Initial state - Show instructions
