@@ -1,0 +1,23 @@
+# =============================================================================
+# REQUIREMENTS.TXT
+# Fast Food Restaurant Queue Simulation - Streamlit App
+# =============================================================================
+
+# Core Libraries
+streamlit==1.31.1
+pandas==2.1.4
+numpy==1.26.3
+
+# Simulation
+simpy==4.1.1
+
+# Statistical Analysis
+scipy==1.11.4
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.1
+plotly==5.18.0
+
+# Additional utilities (optional but recommended)
+kaleido==0.2.1  # For static image export dari Plotly

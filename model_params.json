@@ -1,0 +1,15 @@
+{
+    "arrival_distribution": "gamma",
+    "arrival_params": {
+        "shape": 0.9369749726529073,
+        "scale": 2.524224250061219
+    },
+    "service_distribution": "gamma",
+    "service_params": {
+        "shape": 1.7611904371062805,
+        "scale": 1.6614140126222385
+    },
+    "optimal_servers": 2,
+    "sim_duration": 480,
+    "num_customers": 250
+}
